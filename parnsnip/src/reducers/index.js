@@ -16,6 +16,4 @@ const mockTasks = [
 export default function tasks(
   state = { tasks: mockTasks },
   action
-) {
-  return state;
-}
+) {return state;}
