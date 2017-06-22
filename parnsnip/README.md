@@ -1,2 +1,2 @@
 # Redux in Action 
-- manning exercise
+- manning exercise 2Chapter
