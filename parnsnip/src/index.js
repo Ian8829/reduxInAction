@@ -6,3 +6,10 @@ import tasks from './reducers'
 import './index.css';
 
 const store = createStore(tasks);
+
+ReactDOM.render(
+  <Provider store={store}>
+    <App/>
+  </Provider>,
+  document.querySelector('#root')
+);
