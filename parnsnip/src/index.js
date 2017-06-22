@@ -5,4 +5,4 @@ import { createStore } from 'redux';
 import tasks from './reducers'
 import './index.css';
 
-const store = createStore(tasks)
+const store = createStore(tasks);
