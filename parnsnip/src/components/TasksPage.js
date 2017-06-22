@@ -36,11 +36,11 @@ class TasksPage extends Component {
       description: this.state.description
     });
     this.resetForm();
-  }
+  };
 
   toggleForm = () => {
     this.setState({ showNewCardForm: !this.state.showNewCardForm });
-  }
+  };
 
   render() {
     const { tasks } = this.props;
