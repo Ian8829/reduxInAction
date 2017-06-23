@@ -15,11 +15,11 @@ class TasksPage extends Component {
 
   onTitleChange = e => {
     this.setState({ title: e.target.value });
-  }
+  };
 
   onDescriptionChange = e => {
     this.setState({ description: e.target.value });
-  }
+  };
 
   resetForm() {
     this.setState({
@@ -43,8 +43,6 @@ class TasksPage extends Component {
   };
 
   render() {
-    const { tasks } = this.props;
-
     return(
       <div className="task-list">
         <div className="task-list-header">
@@ -79,9 +77,10 @@ class TasksPage extends Component {
             </button>
           </form>
         )}
+
         <div className="task-lists">
           {TASK_STATUSES.map(status => {
-            const tasks = tasks.filter(task => task.status === status)
+            const tasks = tasks.filter(task => task.status === status);
             return (
               <TaskList
                 key={status}
